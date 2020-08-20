@@ -1,3 +1,9 @@
+import React from 'react'
+import ReactDom from 'react-dom'
+import Exercises from './pages/exercises' 
+import 'bootstrap/dist/css/bootstrap.css'
+import App from './components/app'
+
 /*
 const element = document.createElement('h1');
 element.innerText = "Hello react";
@@ -6,10 +12,7 @@ const container = document.getElementById('root');
 container.appendChild(element);
 */
 
-import React from 'react'
-import ReactDom from 'react-dom'
-
-
+/*
 const user = {
   firstName: 'Harper',
   lastName: 'Perez',
@@ -31,9 +34,23 @@ const name = "Raul"
 const element = (
                  <div> 
                   {getGreeting(user)}
-                  <img src={user.avatar}></img>
                  </div>
                 )
 const container = document.getElementById('root');
 ReactDom.render(element, container);
 
+
+function tick() {
+  const element = (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+  ReactDom.render(element, document.getElementById('root'));
+}
+
+setInterval(tick, 1000);
+*/
+const container =  document.getElementById('root');
+ReactDom.render(<App/>, container)
