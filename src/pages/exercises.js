@@ -6,10 +6,7 @@ import { Route, BrowserRouter  } from 'react-router-dom'
 
 class Exercises extends React.Component
 {
-  constructor(props)
-  {
-    super(props)
-    this.state = {
+  state = {
       data: [
         {
           id: 1,
@@ -35,7 +32,7 @@ class Exercises extends React.Component
           leftColor: "#FAD961",
           rightColor: "#F76B1C"
         }]
-    }
+    
   }
 
   render()
